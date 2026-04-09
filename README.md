@@ -43,4 +43,5 @@ Kiểm tra lại đường dẫn sau khi xóa :
 Bước 16 : mở file dulieu.sql của bước 14, chạy toàn bộ các lệnh này. REFRESH lại cây liệt kê các database => kiểm chứng kết quả được tạo ra tương đương với các bước 6,7,8,9,10,11,12,13.
 <img width="1901" height="1078" alt="image" src="https://github.com/user-attachments/assets/f2aeed0f-91f7-48bb-acc5-76bfe1db4b4e" />
   Bước 17 : upload file dulieu.sql lên github repository.
-  
+  <img width="1908" height="1067" alt="image" src="https://github.com/user-attachments/assets/109bc95c-f2a8-4b7b-beac-34c229c82a7f" />
+
