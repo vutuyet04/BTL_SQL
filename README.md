@@ -17,3 +17,14 @@ Bước 6 : Tạo cơ sở dữ liệu mới (create database) với tên tuỳ 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d541d027-eba5-4432-b738-434d890fc2b3" />
 Bước 7 :Tạo bảng dữ liệu (create and design table) với tên bảng tuỳ ý, có các trường dữ liệu phù hợp với dữ liệu của file data mẫu (CSV), với Khoá chính (Primary Key) là trường masv.
 <img width="1915" height="1079" alt="image" src="https://github.com/user-attachments/assets/0f50fbbf-e7f8-477e-8f1d-fdf84bf64d73" />
+Bước 8: Import dữ liệu từ file csv mẫu vào trong bảng vừa tạo
+<img width="1913" height="1079" alt="image" src="https://github.com/user-attachments/assets/2bde3b3a-0a92-4f1d-876c-78b2eaad27f0" />
+Bước 9: Kiểm tra số dòng của bảng dữ liệu sau khi import
+gõ lệnh : `select count(*) as tongsodong from SinhVien`
+<img width="1919" height="1076" alt="image" src="https://github.com/user-attachments/assets/ac74659c-eb28-47db-a1ed-d877216e5d6b" />
+Bước 10: Insert thông tin cá nhân
+Gõ lệnh :`INSERT INTO SinhVien (masv, hotensv, malop, ngaysinh, noisinh, diachi) 
+VALUES ('K235480106078', N'Vũ Thị Ánh Tuyết','K59KMT','04/04/2005', N'Bắc Ninh', N'Bắc Ninh');
+select * from SinhVien where masv= 'K235480106078'`
+<img width="1908" height="1079" alt="image" src="https://github.com/user-attachments/assets/21fe744c-d461-46bd-b7ca-9caf82809223" />
+Bước 11 :Cập nhật(update) trường noisinh thành 'Sao Hoả' cho những dòng có noisinh và diachi đều là NULL.
