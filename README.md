@@ -28,3 +28,4 @@ VALUES ('K235480106078', N'Vũ Thị Ánh Tuyết','K59KMT','04/04/2005', N'Bắ
 select * from SinhVien where masv= 'K235480106078'`
 <img width="1908" height="1079" alt="image" src="https://github.com/user-attachments/assets/21fe744c-d461-46bd-b7ca-9caf82809223" />
 Bước 11 :Cập nhật(update) trường noisinh thành 'Sao Hoả' cho những dòng có noisinh và diachi đều là NULL.
+<img width="1917" height="1079" alt="image" src="https://github.com/user-attachments/assets/eadd3fec-3a88-4f6e-9d7e-360a21180f20" />
