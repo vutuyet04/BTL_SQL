@@ -29,3 +29,8 @@ select * from SinhVien where masv= 'K235480106078'`
 <img width="1908" height="1079" alt="image" src="https://github.com/user-attachments/assets/21fe744c-d461-46bd-b7ca-9caf82809223" />
 Bước 11 :Cập nhật(update) trường noisinh thành 'Sao Hoả' cho những dòng có noisinh và diachi đều là NULL.
 <img width="1917" height="1079" alt="image" src="https://github.com/user-attachments/assets/eadd3fec-3a88-4f6e-9d7e-360a21180f20" />
+bước 12 : Tạo bảng SaoHoa gồm những sinh viên có nơi sinh ở 'Sao Hoả'
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b50111ca-59bd-4978-b011-d4d19e1de06e" />
+Bước 13 :Xoá (delete) trong bảng SaoHoa những sinh viên cùng họ với em (họ:VŨ)
+<img width="1907" height="1079" alt="image" src="https://github.com/user-attachments/assets/5d7cde4d-b2a9-402b-a17e-23a960b0339d" />
+Bước 14: 
