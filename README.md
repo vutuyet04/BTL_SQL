@@ -5,11 +5,12 @@ Bước 2 : Cấu hình cho SQL Server làm việc ở cổng động (Dynamic P
 <img width="1913" height="1068" alt="image" src="https://github.com/user-attachments/assets/41c41990-2c00-4f4b-88f1-cf6c5d97b8b1" />
 <img width="1904" height="1079" alt="image" src="https://github.com/user-attachments/assets/42ec9e6f-92b0-4e01-8293-74133787e0bf" />
 Bước 3: Kiểm tra xem service SQL Server có đang running và mở đúng cổng đã chọn hay không? 
-- Sử dụng lệnh trên cmd: netstat -ano | findstr LISTENING
+Sử dụng lệnh trên cmd: netstat -ano | findstr LISTENING
 <img width="1355" height="756" alt="image" src="https://github.com/user-attachments/assets/83762473-bc79-4c20-b02d-34f562397b61" /> 
 Bước 4 :Cài đặt SQL Server Management Studio.
 <img width="1919" height="1070" alt="image" src="https://github.com/user-attachments/assets/6990c767-e16a-4033-88f8-3b8458c55bf3" />
 Bước 5 :Chạy phần mềm ssms để Đăng nhập vào SQL Server bằng 2 cách:
+  
   Cách 1: Windows Authentication .
   <img width="1915" height="1079" alt="image" src="https://github.com/user-attachments/assets/ee1f59b7-6bc7-4d2f-b308-905fd69ef9d5" />
   cách 2 : SQL Server Authentication.
@@ -21,9 +22,11 @@ Bước 7 :Tạo bảng dữ liệu (create and design table) với tên bảng 
 Bước 8: Import dữ liệu từ file csv mẫu vào trong bảng vừa tạo.
 <img width="1913" height="1079" alt="image" src="https://github.com/user-attachments/assets/2bde3b3a-0a92-4f1d-876c-78b2eaad27f0" />
 Bước 9: Kiểm tra số dòng của bảng dữ liệu sau khi import
-- Gõ lệnh : `select count(*) as tongsodong from SinhVien`
+
+Gõ lệnh : ` select count(*) as tongsodong from SinhVien `
 <img width="1919" height="1076" alt="image" src="https://github.com/user-attachments/assets/ac74659c-eb28-47db-a1ed-d877216e5d6b" />
 Bước 10: Insert thông tin cá nhân :
+
 - Gõ lệnh :`INSERT INTO SinhVien (masv, hotensv, malop, ngaysinh, noisinh, diachi) 
 VALUES ('K235480106078', N'Vũ Thị Ánh Tuyết','K59KMT','04/04/2005', N'Bắc Ninh', N'Bắc Ninh');
 select * from SinhVien where masv= 'K235480106078'`
