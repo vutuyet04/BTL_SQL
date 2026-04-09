@@ -1,36 +1,45 @@
-Bước 1: Download và cài đặt SQL Server 2025, phiên bản Developer
+Bước 1: Download và cài đặt SQL Server 2025, phiên bản Developer .
 <img width="1906" height="1076" alt="image" src="https://github.com/user-attachments/assets/c63dc87b-2657-4854-9634-7454a7ee072e" />
-Bước 2 : Cấu hình cho SQL Server làm việc ở cổng động (Dynamic Port), TCP - 3xxxx( 36078)_msv: K235480106078
+Bước 2 : Cấu hình cho SQL Server làm việc ở cổng động (Dynamic Port), TCP - 3xxxx( 36078)_msv: K235480106078 .
 <img width="1910" height="1079" alt="image" src="https://github.com/user-attachments/assets/1220c956-8054-4c99-bdd6-e527f945a732" /> 
 <img width="1913" height="1068" alt="image" src="https://github.com/user-attachments/assets/41c41990-2c00-4f4b-88f1-cf6c5d97b8b1" />
 <img width="1904" height="1079" alt="image" src="https://github.com/user-attachments/assets/42ec9e6f-92b0-4e01-8293-74133787e0bf" />
-Bước 3: Kiểm tra xem service SQL Server có đang running và mở đúng cổng đã chọn hay không? _ Sử dụng lệnh trên cmd: netstat -ano | findstr LISTENING
+Bước 3: Kiểm tra xem service SQL Server có đang running và mở đúng cổng đã chọn hay không? 
+- Sử dụng lệnh trên cmd: netstat -ano | findstr LISTENING
 <img width="1355" height="756" alt="image" src="https://github.com/user-attachments/assets/83762473-bc79-4c20-b02d-34f562397b61" /> 
-Bước 4 :Cài đặt SQL Server Management Studio
+Bước 4 :Cài đặt SQL Server Management Studio.
 <img width="1919" height="1070" alt="image" src="https://github.com/user-attachments/assets/6990c767-e16a-4033-88f8-3b8458c55bf3" />
 Bước 5 :Chạy phần mềm ssms để Đăng nhập vào SQL Server bằng 2 cách:
-  Cách 1: Windows Authentication 
+  Cách 1: Windows Authentication .
   <img width="1915" height="1079" alt="image" src="https://github.com/user-attachments/assets/ee1f59b7-6bc7-4d2f-b308-905fd69ef9d5" />
-  cách 2 : SQL Server Authentication
+  cách 2 : SQL Server Authentication.
   <img width="1914" height="1079" alt="image" src="https://github.com/user-attachments/assets/cad62f68-2708-4485-91e9-4739249160be" />
-Bước 6 : Tạo cơ sở dữ liệu mới (create database) với tên tuỳ ý, chọn Path (nơi lưu trữ db) cho file lưu dữ liệu và file lưu log ở ổ đĩa khác với ổ C
+Bước 6 : Tạo cơ sở dữ liệu mới (create database) với tên tuỳ ý, chọn Path (nơi lưu trữ db) cho file lưu dữ liệu và file lưu log ở ổ đĩa khác với ổ C :
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d541d027-eba5-4432-b738-434d890fc2b3" />
 Bước 7 :Tạo bảng dữ liệu (create and design table) với tên bảng tuỳ ý, có các trường dữ liệu phù hợp với dữ liệu của file data mẫu (CSV), với Khoá chính (Primary Key) là trường masv.
 <img width="1915" height="1079" alt="image" src="https://github.com/user-attachments/assets/0f50fbbf-e7f8-477e-8f1d-fdf84bf64d73" />
-Bước 8: Import dữ liệu từ file csv mẫu vào trong bảng vừa tạo
+Bước 8: Import dữ liệu từ file csv mẫu vào trong bảng vừa tạo.
 <img width="1913" height="1079" alt="image" src="https://github.com/user-attachments/assets/2bde3b3a-0a92-4f1d-876c-78b2eaad27f0" />
 Bước 9: Kiểm tra số dòng của bảng dữ liệu sau khi import
-gõ lệnh : `select count(*) as tongsodong from SinhVien`
+- Gõ lệnh : `select count(*) as tongsodong from SinhVien`
 <img width="1919" height="1076" alt="image" src="https://github.com/user-attachments/assets/ac74659c-eb28-47db-a1ed-d877216e5d6b" />
-Bước 10: Insert thông tin cá nhân
-Gõ lệnh :`INSERT INTO SinhVien (masv, hotensv, malop, ngaysinh, noisinh, diachi) 
+Bước 10: Insert thông tin cá nhân :
+- Gõ lệnh :`INSERT INTO SinhVien (masv, hotensv, malop, ngaysinh, noisinh, diachi) 
 VALUES ('K235480106078', N'Vũ Thị Ánh Tuyết','K59KMT','04/04/2005', N'Bắc Ninh', N'Bắc Ninh');
 select * from SinhVien where masv= 'K235480106078'`
 <img width="1908" height="1079" alt="image" src="https://github.com/user-attachments/assets/21fe744c-d461-46bd-b7ca-9caf82809223" />
 Bước 11 :Cập nhật(update) trường noisinh thành 'Sao Hoả' cho những dòng có noisinh và diachi đều là NULL.
 <img width="1917" height="1079" alt="image" src="https://github.com/user-attachments/assets/eadd3fec-3a88-4f6e-9d7e-360a21180f20" />
-bước 12 : Tạo bảng SaoHoa gồm những sinh viên có nơi sinh ở 'Sao Hoả'
+Bước 12 : Tạo bảng SaoHoa gồm những sinh viên có nơi sinh ở 'Sao Hoả' :
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b50111ca-59bd-4978-b011-d4d19e1de06e" />
 Bước 13 :Xoá (delete) trong bảng SaoHoa những sinh viên cùng họ với em (họ:VŨ)
 <img width="1907" height="1079" alt="image" src="https://github.com/user-attachments/assets/5d7cde4d-b2a9-402b-a17e-23a960b0339d" />
-Bước 14: 
+Bước 14: Xuất toàn bộ kết quả của các bước 6,7,8,9,10,11,12,13 ra file dulieu.sql .
+<img width="1919" height="1075" alt="image" src="https://github.com/user-attachments/assets/3af299bc-1935-433e-8db2-fd72ee5345be" />
+Bước 15: Xoá csdl đã tạo, sau khi xoá thành công, kiểm tra tại path (path chọn ở bước 6) xem còn tồn tại 2 file của bước 6 không?
+<img width="1919" height="1076" alt="image" src="https://github.com/user-attachments/assets/d6b183c6-f905-4a09-8ceb-31b9e5a09a44" />
+Kiểm tra lại đường dẫn sau khi xóa :
+<img width="1898" height="1066" alt="image" src="https://github.com/user-attachments/assets/fe963158-b1f0-4248-9e30-0a2c3234b0ff" />
+Bước 16 : mở file dulieu.sql của bước 14, chạy toàn bộ các lệnh này. REFRESH lại cây liệt kê các database => kiểm chứng kết quả được tạo ra tương đương với các bước 6,7,8,9,10,11,12,13.
+<img width="1901" height="1078" alt="image" src="https://github.com/user-attachments/assets/f2aeed0f-91f7-48bb-acc5-76bfe1db4b4e" />
+ 
