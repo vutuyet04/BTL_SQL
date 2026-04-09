@@ -16,3 +16,4 @@ Bước 5 :Chạy phần mềm ssms để Đăng nhập vào SQL Server bằng 2
 Bước 6 : Tạo cơ sở dữ liệu mới (create database) với tên tuỳ ý, chọn Path (nơi lưu trữ db) cho file lưu dữ liệu và file lưu log ở ổ đĩa khác với ổ C
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d541d027-eba5-4432-b738-434d890fc2b3" />
 Bước 7 :Tạo bảng dữ liệu (create and design table) với tên bảng tuỳ ý, có các trường dữ liệu phù hợp với dữ liệu của file data mẫu (CSV), với Khoá chính (Primary Key) là trường masv.
+<img width="1915" height="1079" alt="image" src="https://github.com/user-attachments/assets/0f50fbbf-e7f8-477e-8f1d-fdf84bf64d73" />
