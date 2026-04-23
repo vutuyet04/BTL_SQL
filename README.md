@@ -1,3 +1,9 @@
+HỌ VÀ TÊN :Vũ Thị Ánh Tuyết
+
+Lớp: K59.KMT.K01
+
+MSSV: K235480106078
+
 Bước 1: Download và cài đặt SQL Server 2025, phiên bản Developer .
 <img width="1906" height="1076" alt="image" src="https://github.com/user-attachments/assets/c63dc87b-2657-4854-9634-7454a7ee072e" />
 Bước 2 : Cấu hình cho SQL Server làm việc ở cổng động (Dynamic Port), TCP - 3xxxx( 36078)_msv: K235480106078 .
